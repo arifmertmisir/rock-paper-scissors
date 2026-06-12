@@ -36,18 +36,27 @@ A console-based Rock Paper Scissors game built with vanilla JavaScript as part o
 - [x] Plays 5 rounds by calling `playRound` 5 times using a loop
 - [x] Declares the overall winner at the end
 
+### Step 7: UI Refactor
+
+- [x] Replaced `prompt`-based input with clickable buttons
+- [x] Removed the 5-round loop logic
+- [x] Added DOM methods to display results instead of `console.log`
+- [x] Display live running score
+- [x] Announce a winner when a player reaches 5 points
+
 ## 🎮 How to Play
 
 1. Open `index.html` in your browser
-2. Open the browser console (F12 or Cmd+Option+I)
-3. Enter your choice when prompted: `rock`, `paper` or `scissors`
-4. Play 5 rounds — the player with the most wins takes the game!
+2. Click Rock, Paper, or Scissors to play a round
+3. First to 5 points wins the game!
 
 ## 🖥️ Console Output
 
 ![Game Output](./assets/preview.png)
+![Game Output 2](./assets/ui-preview.png)
 
 ## 🛠️ Built With
 
 - HTML
+- CSS
 - JavaScript (Vanilla)

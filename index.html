@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            font-family: sans-serif;
+        }
+        .score-board {
+            padding: 20px 0 ;
+        }
+        .score-board table, th, td{
+            border: 1px solid black;
+        }
+        .buttonLayout {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <div class="headerLayout">
+        <h1>Welcome to the Rock Paper Scissors Game!</h1>
+        <h3>Please pick your selection by clicking on the buttons!</h3>
+    </div>
+    <div class="score-board">
+        <table>
+          <th colspan="2">Scoreboard</th>
+          <tr>
+            <th>Your Score</th>
+            <th>Computer Score</th>
+          </tr>
+          <tr>
+            <td class="your-score">0</td>
+            <td class="computer-score">0</td>
+          </tr>
+        </table>
+    </div>
+    <div class="buttonLayout">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+    <div class="info"></div>
     <script src="game.js"></script>
 </body>
 </html>
